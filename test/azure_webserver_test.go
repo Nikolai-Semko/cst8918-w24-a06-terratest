@@ -25,7 +25,7 @@ func TestAzureLinuxVMCreation(t *testing.T) {
 		// Use terraform binary instead of tofu
 		// If terraform is not in PATH, use full path like:
 		// TerraformBinary: "C:\\path\\to\\terraform.exe",
-		TerraformBinary: "../terraform.exe",
+		TerraformBinary: "./terraform.exe",
 	}
 
 	defer terraform.Destroy(t, terraformOptions)
